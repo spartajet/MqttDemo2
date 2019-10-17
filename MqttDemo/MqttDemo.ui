@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="1" column="1" colspan="7">
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="TopicEdit">
       <property name="text">
        <string>/df/real</string>
       </property>
@@ -42,7 +42,7 @@
     <item row="0" column="1">
      <widget class="QLineEdit" name="IpEdit">
       <property name="text">
-       <string>192.168.31.101</string>
+       <string>192.168.31.158</string>
       </property>
      </widget>
     </item>
@@ -122,7 +122,11 @@
      </widget>
     </item>
     <item row="0" column="5">
-     <widget class="QLineEdit" name="ClientIdEdit"/>
+     <widget class="QLineEdit" name="ClientIdEdit">
+      <property name="text">
+       <string>paho_mqtt</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

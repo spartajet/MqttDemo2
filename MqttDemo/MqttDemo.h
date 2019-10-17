@@ -8,7 +8,7 @@
 using namespace std;
 using namespace mqtt;
 
-class callback;
+class MqttCallback;
 class action_listener;
 class delivery_action_listener;
 
@@ -25,12 +25,14 @@ private:
 	std::string IpAdress = "";
 	std::string ClientId = "";
 	mqtt::async_client *async_client_=nullptr;
+	// int TIMEOUT = std::chrono::seconds(10);
+public slots:
 	void on_ConnectControlButton_clicked();
 	void on_SubscribeButton_clicked();
 	void on_SendButton_clicked();
 };
 
-class callback : public virtual mqtt::callback
+class MqttCallback : public virtual mqtt::callback
 {
 public:
 	void connection_lost(const string& cause) override
