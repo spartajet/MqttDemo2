@@ -15,10 +15,17 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_3">
+    <item row="1" column="1" colspan="7">
+     <widget class="QLineEdit" name="lineEdit">
       <property name="text">
-       <string>Send</string>
+       <string>/df/real</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Topic</string>
       </property>
      </widget>
     </item>
@@ -39,6 +46,16 @@
       </property>
      </widget>
     </item>
+    <item row="3" column="1" colspan="8">
+     <widget class="QPlainTextEdit" name="ReceiveMessageEdit"/>
+    </item>
+    <item row="0" column="6">
+     <widget class="QPushButton" name="ConnectControlButton">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
@@ -46,20 +63,7 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Port</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1" colspan="5">
-     <widget class="QLineEdit" name="SendMessageEdit"/>
-    </item>
-    <item row="3" column="1" colspan="6">
-     <widget class="QPlainTextEdit" name="ReceiveMessageEdit"/>
-    </item>
-    <item row="0" column="5" colspan="2">
+    <item row="0" column="7" colspan="2">
      <spacer name="horizontalSpacer">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -79,7 +83,31 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="6">
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Port</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="7">
+     <widget class="QLineEdit" name="SendMessageEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Send</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8">
+     <widget class="QPushButton" name="SubscribeButton">
+      <property name="text">
+       <string>Subscribe</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
      <widget class="QPushButton" name="SendButton">
       <property name="text">
        <string>Send</string>
@@ -87,32 +115,14 @@
      </widget>
     </item>
     <item row="0" column="4">
-     <widget class="QPushButton" name="ConnectControlButton">
+     <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>Connect</string>
+       <string>ClientId</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Topic</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="6">
-     <widget class="QPushButton" name="SubscribeButton">
-      <property name="text">
-       <string>Subscribe</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1" colspan="5">
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="text">
-       <string>/df/real</string>
-      </property>
-     </widget>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="ClientIdEdit"/>
     </item>
    </layout>
   </widget>

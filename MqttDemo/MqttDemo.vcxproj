@@ -50,14 +50,14 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <QtInstall>qt5.9.8</QtInstall>
-    <QtModules>core;gui;help;network;printsupport;widgets</QtModules>
+    <QtInstall>qt5.12.3</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
     <QtLibrarySearchPath>
     </QtLibrarySearchPath>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <QtInstall>qt5.9.8</QtInstall>
-    <QtModules>core;gui;help;network;printsupport;widgets</QtModules>
+    <QtModules>core;gui;widgets</QtModules>
     <QtLibrarySearchPath>
     </QtLibrarySearchPath>
   </PropertyGroup>
@@ -78,7 +78,7 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)libs\mqtt\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>paho-mqttpp3-staticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>paho-mqtt3cd.lib;paho-mqtt3ad.lib;paho-mqttpp3-staticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
     </Link>
   </ItemDefinitionGroup>
@@ -95,7 +95,7 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)libs\mqtt\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>paho-mqttpp3-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>paho-mqtt3c.lib;paho-mqtt3a.lib;paho-mqttpp3-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
     </Link>
   </ItemDefinitionGroup>
