@@ -12,4 +12,7 @@ public:
 
 private:
 	Ui::MqttDemoClass ui;
+	void on_ConnectControlButton_clicked();
+	void on_SubscribeButton_clicked();
+	void on_SendButton_clicked();
 };
