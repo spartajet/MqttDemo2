@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MqttDemo.h"
+#include "mqtt/async_client.h"
 
 class MqttDemo : public QMainWindow
 {
